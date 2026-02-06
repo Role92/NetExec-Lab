@@ -75,15 +75,15 @@
 #  win_shell: install-packageprovider -name nuget -force
 
 - name: Ensure Administrator is part of Enterprise Admins
-  win_domain_group_membership:
-    name: "Enterprise Admins"
+  microsoft.ad.group:
+    identity: "Enterprise Admins"
     members:
-      - Administrator
+      - sAMAccountName: "Administrator"
     state: present
 
-- name: Ensure Administrator is part of Domain Admins
-  win_domain_group_membership:
-    name: "Domain Admins"
+- name: Ensure Administrator is part of Enterprise Admins
+  microsoft.ad.group:
+    identity: "Enterprise Admins"
     members:
-      - Administrator
+      - sAMAccountName: "Administrator"
     state: present
