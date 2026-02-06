@@ -20,7 +20,7 @@
 
 - Provisioning with python
   - Python3 (>=3.8)
-  - [ansible-core==2.12.6](https://docs.ansible.com/ansible/latest/index.html)
+  - [ansible-core](https://docs.ansible.com/ansible/latest/index.html)
   - pywinrm
 
 - Or provisioning With Docker
@@ -100,7 +100,7 @@ source .venv/bin/activate
 
 ```
 python3 -m pip install --upgrade pip
-python3 -m pip install ansible-core==2.12.6
+python3 -m pip install ansible-core
 python3 -m pip install pywinrm
 ```
 

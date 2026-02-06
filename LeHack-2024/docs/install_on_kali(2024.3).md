@@ -20,7 +20,7 @@
 
 - Provisioning with python
   - Python3 (>=3.8)
-  - [ansible-core==2.12.6](https://docs.ansible.com/ansible/latest/index.html)
+  - [ansible-core](https://docs.ansible.com/ansible/latest/index.html)
   - pywinrm
 
 # Lab Installation Guide on Kali 2024.3
@@ -89,7 +89,7 @@ source .venv/bin/activate.fish  # For fish shell
 
 ```bash
 python3 -m pip install --upgrade pip
-python3 -m pip install ansible-core==2.12.6
+python3 -m pip install ansible-core
 ```
 
 ## Step 10: Install Additional Dependencies

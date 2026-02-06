@@ -77,7 +77,7 @@ Access your Kali machine at `https://10.RANGENUMBER.10.99:8444` using the creds 
 Make sure the ansible version is 2.12.6
 
 ```bash
-python3 -m pip install ansible-core==2.12.6
+python3 -m pip install ansible-core
 ```
 
 ## Troubleshot DNS issues

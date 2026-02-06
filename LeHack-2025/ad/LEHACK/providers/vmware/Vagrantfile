@@ -88,4 +88,4 @@ boxes = [
   end
 end
 
-#pip install --upgrade pip --break-system-packages  && pip install ansible-core==2.12.6 --break-system-packages && pip install pywinrm --break-system-packages 
+#pip install --upgrade pip --break-system-packages  && pip install ansible-core --break-system-packages && pip install pywinrm --break-system-packages 
