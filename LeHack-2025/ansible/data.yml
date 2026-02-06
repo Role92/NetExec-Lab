@@ -3,7 +3,7 @@
   hosts: all:!elk
   connection: local
   vars_files:
-    - "{{data_path}}/config.json"
+    - "../ad/{{domain_name}}/data/config.json"
   tasks:
     - name: save the Json data to a Variable as a Fact
       set_fact:
