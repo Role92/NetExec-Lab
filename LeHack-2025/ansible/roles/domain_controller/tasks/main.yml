@@ -75,15 +75,15 @@
 #  win_shell: install-packageprovider -name nuget -force
 
 - name: Ensure Administrator is part of Enterprise Admins
-  microsoft.ad.group:
-    identity: "Enterprise Admins"
-    members:
-      - sAMAccountName: "Administrator"
-    state: present
+  ansible.windows.win_shell: |
+    Add-ADGroupMember -Identity "Enterprise Admins" -Members "Administrator"
+  args:
+    executable: PowerShell
+  ignore_errors: yes
 
 - name: Ensure Administrator is part of Enterprise Admins
-  microsoft.ad.group:
-    identity: "Enterprise Admins"
-    members:
-      - sAMAccountName: "Administrator"
-    state: present
+  ansible.windows.win_shell: |
+    Add-ADGroupMember -Identity "Enterprise Admins" -Members "Administrator"
+  args:
+    executable: PowerShell
+  ignore_errors: yes
