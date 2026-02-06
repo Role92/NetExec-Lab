@@ -2,8 +2,6 @@
 
 # Load datas
 - import_playbook: data.yml
-  vars:
-    data_path: "../ad/{{domain_name}}/data/"
   tags: 'data'
 
 # Prepare servers

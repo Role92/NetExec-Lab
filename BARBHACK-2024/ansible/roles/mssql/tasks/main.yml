@@ -43,7 +43,7 @@
     state: directory
 
 - name: create the configuration file
-  win_template: 
+  ansible.builtin.template: 
     src: files/sql_conf.ini.{{sql_version}}.j2
     dest: c:\setup\mssql\sql_conf.ini
 
